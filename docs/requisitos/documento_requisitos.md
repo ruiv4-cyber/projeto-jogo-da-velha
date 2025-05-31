@@ -2,10 +2,10 @@
 
 ## Histórico de Revisões Deste Arquivo
 
-| Data       | Versão | Descrição                | Autor  |
-| ---------- | ------ | ------------------------ | ------ |
-| DD/MM/AAAA | 1.0    | Versão inicial           | [Nome] |
-| DD/MM/AAAA | 1.1    | [Descrição da alteração] | [Nome] |
+| Data       | Versão | Descrição                   | Autor    |
+| ---------- | ------ | ------------------------    | ------   |
+| 30/05/2025 | 1.0    | Versão inicial              | Manuella |
+| 3/05/2025  | 1.1    | Modificação das informações | Manuella |
 
 ## 1. Introdução
 
