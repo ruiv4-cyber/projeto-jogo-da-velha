@@ -38,15 +38,19 @@ Usuário joga uma partida do jogo da velha contra outro jogador ou contra a máq
 
 ### [Alternativa 1]
 
-1. [Passo 1]
-2. [Passo 2]
-3. [Passo n]
+Alternativa 1: Jogar contra a máquina
+
+1.O usuário seleciona a opção de jogar contra o computador.
+2.O usuário faz a primeira jogada.
+3.O sistema executa a jogada da máquina automaticamente.
+4.O fluxo continua como no fluxo básico a partir do passo 7.
 
 ### [Alternativa 2]
 
-1. [Passo 1]
-2. [Passo 2]
-3. [Passo n]
+1.Jogador tenta marcar célula já ocupada
+2.O jogador clica em uma célula já marcada.
+3.O sistema não aceita a jogada e exibe uma mensagem informando que a célula está ocupada.
+4.O jogador faz uma nova tentativa.
 
 ## Fluxos de Exceção
 
