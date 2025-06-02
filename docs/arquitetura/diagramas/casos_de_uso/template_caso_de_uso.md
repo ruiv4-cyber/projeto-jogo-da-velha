@@ -56,38 +56,79 @@ Alternativa 1: Jogar contra a máquina
 
 ### [Exceção 1]
 
-1. [Passo 1]
-2. [Passo 2]
-3. [Passo n]
+- O jogo não carrega corretamente a página ou os recursos (HTML/CSS/JS).
+- O sistema exibe uma mensagem de erro para o usuário.
+- O usuário tenta recarregar a página.
 
 ### [Exceção 2]
 
-1. [Passo 1]
-2. [Passo 2]
-3. [Passo n]
+- O jogador tenta realizar uma jogada inválida (ex: clicar fora do tabuleiro).
+- O sistema exibe uma mensagem de erro informando que a ação é inválida.
+- O jogador deve realizar uma jogada válida para continuar.
 
 ## Pós-condições
 
-1. [Pós-condição 1]
-2. [Pós-condição 2]
-3. [Pós-condição n]
+1. O jogo termina com um vencedor ou empate.
+2.O tabuleiro exibe o estado final da partida.
+3.O usuário pode iniciar uma nova partida a qualquer momento.
 
 ## Requisitos Relacionados
 
-- [Requisito 1]
-- [Requisito 2]
-- [Requisito n]
+- O sistema deve permitir iniciar uma nova partida.
+- O sistema deve validar jogadas para garantir que não sejam feitas em células ocupadas.
+- O sistema deve detectar vitória, derrota ou empate corretamente.
+- O sistema deve permitir escolher entre jogar contra outro jogador ou contra a máquina.
+- O sistema deve apresentar uma interface gráfica responsiva e intuitiva.
 
 ## Interface de Usuário
 
-[Descrição ou referência a protótipos/mockups]
+Tela principal com o tabuleiro 3x3 exibido em formato de grid.
+Botões para iniciar nova partida e escolher modo de jogo (multiplayer ou contra IA).
+Indicador de jogador da vez (X ou O).
+Mensagens dinâmicas para avisos (ex: vitória, empate, célula ocupada).
+Visual video-game retro, limpo e responsivo com destaque para o tabuleiro.
 
 ## Diagrama
 
 ```mermaid
-flowchart TD
-        A(["Start"])
-        A --> B{"Decision"}
-        B --> C["Option A"]
-        B --> D["Option B"]
+            +----------------+
+            |    Jogador     |
+            +--------+-------+
+                     |
+      +--------------+----------------+
+      |                               |
++-----v-----+                   +-----v-----+
+| Iniciar   |                   | Escolher  |
+| Jogo      |                   | Modo de   |
++-----------+                   | Jogo      |
+                                +-----+-----+
+                                      |
+                              +-------v-------+
+                              | Fazer Jogada  |
+                              +-------+-------+
+                                      |
+                              +-------v-------+
+                              | Validar Jogada|
+                              +-------+-------+
+                                      |
+                              +-------v-------+
+                              | Verificar     |
+                              | Resultado    |
+                              +-------+-------+
+                                      |
+                              +-------v-------+
+                              | Exibir Mensagem|
+                              +---------------+
+                                      |
+                               +------v------+
+                               | Reiniciar   |
+                               | Jogo        |
+                               +-------------+
+                                      ^
+                                      |
+                             +--------+---------+
+                             |    Computador     |
+                             | (IA - modo opc.)  |
+                             +-------------------+
+
 ```
