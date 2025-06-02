@@ -89,46 +89,18 @@ Mensagens dinâmicas para avisos (ex: vitória, empate, célula ocupada).
 Visual video-game retro, limpo e responsivo com destaque para o tabuleiro.
 
 ## Diagrama
-
 ```mermaid
-            +----------------+
-            |    Jogador     |
-            +--------+-------+
-                     |
-      +--------------+----------------+
-      |                               |
-+-----v-----+                   +-----v-----+
-| Iniciar   |                   | Escolher  |
-| Jogo      |                   | Modo de   |
-+-----------+                   | Jogo      |
-                                +-----+-----+
-                                      |
-                              +-------v-------+
-                              | Fazer Jogada  |
-                              +-------+-------+
-                                      |
-                              +-------v-------+
-                              | Validar Jogada|
-                              +-------+-------+
-                                      |
-                              +-------v-------+
-                              | Verificar     |
-                              | Resultado    |
-                              +-------+-------+
-                                      |
-                              +-------v-------+
-                              | Exibir Mensagem|
-                              +---------------+
-                                      |
-                               +------v------+
-                               | Reiniciar   |
-                               | Jogo        |
-                               +-------------+
-                                      ^
-                                      |
-                             +--------+---------+
-                             |    Computador     |
-                             | (IA - modo opc.)  |
-                             +-------------------+
+graph TD
+    Jogador(("Jogador"))
+    Computador["Computador (IA)"]
 
+    Jogador --> IniciarJogo["Iniciar Jogo"]
+    Jogador --> EscolherModo["Escolher Modo de Jogo"]
+    Jogador --> FazerJogada["Fazer Jogada"]
+    Computador --> FazerJogada
+
+    FazerJogada --> ValidarJogada["Validar Jogada"]
+    ValidarJogada --> VerificarResultado["Verificar Resultado"]
+    VerificarResultado --> ExibirMensagem["Exibir Mensagem de Resultado"]
+    Jogador --> ReiniciarJogo["Reiniciar Jogo"]
 ```
