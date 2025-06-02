@@ -92,7 +92,7 @@ Visual video-game retro, limpo e responsivo com destaque para o tabuleiro.
 ```mermaid
 graph TD
     Jogador(("Jogador"))
-    Computador["Computador (IA)"]
+    Computador["Computador "]
 
     Jogador --> IniciarJogo["Iniciar Jogo"]
     Jogador --> EscolherModo["Escolher Modo de Jogo"]
