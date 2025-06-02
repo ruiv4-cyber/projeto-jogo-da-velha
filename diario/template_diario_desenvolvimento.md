@@ -12,8 +12,8 @@
 
 ### Informações Básicas
 
-**Data**: Maio 2025 (atividades realizadas entre 04/05 e 24/05)
-**Membros presentes**: Todos os integrantes participaram das atividades.
+**Data**: Maio 2025 (atividades realizadas entre 04/05 e 24/05)  
+**Membros presentes**: Todos os integrantes participaram das atividades.  
 **Tema**: Desenvolvimento incremental de um jogo da velha com foco em design centrado no usuário, prototipagem e acessibilidade.
 
 ### Atividades Realizadas
